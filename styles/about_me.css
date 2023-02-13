@@ -1,0 +1,161 @@
+@import url('./styles.css');
+@import url('./footer_styles.css');
+
+
+
+
+#about_me_heading{
+    align-self: flex-start;
+    margin-top: 100px;
+}
+
+.about_me_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 12px;
+    background: var(--primaryColor);
+}
+#header_image{
+    flex: 1;
+    width: 50%;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+#header_image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.about_me_content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 36px;
+    word-spacing: 2px;
+}
+
+.about_me_content > p{
+    width: 80%;
+}
+
+.about_me_content :nth-child(2){
+    margin-top: 44px;
+}
+
+.underline_span{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: whitesmoke;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+    font-weight: 500;
+}
+
+.bold_span{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.about_me_place{
+    background: whitesmoke;
+    margin-top: 0px;
+}
+
+.about_me_place  p{
+    color: black;
+}
+
+.about_me_place .underline_span{
+    text-decoration-color: black;
+}
+
+#button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.git_button_about{
+    margin: 44px;
+    align-self: center;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+
+    .about_me_header{
+        
+        flex-direction: column;
+        margin-top: 100px;
+
+        padding: 12px;
+
+    }
+
+    #header_image{
+        flex: 1;
+        width: 70%;
+        border-radius: 6px;
+    }
+    
+    .about_me_content > :nth-child(2){
+        margin-top: 0px;
+    }
+
+    .about_me_place{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+
+    .about_me_content > p{
+        width: 70%;
+        text-align: start;
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+    .about_me_header{
+        
+        flex-direction: column;
+        margin-top: 100px;
+
+        padding: 12px;
+
+    }
+
+    #header_image{
+        flex: 1;
+        width: 60%;
+        border-radius: 6px;
+    }
+    
+    .about_me_content > :nth-child(2){
+        margin-top: 0px;
+    }
+
+    .about_me_place{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+
+    .about_me_content > p{
+        width: 70%;
+        text-align: start;
+    }
+}

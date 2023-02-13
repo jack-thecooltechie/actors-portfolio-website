@@ -1,0 +1,201 @@
+/* Contact Me Container */
+
+#contact_me_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background: var(--primaryColor);
+    margin-top: 100px;
+    padding: 24px;
+}
+
+
+
+/* Contact Container */
+#contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    flex: 1 1;
+    padding: 16px 8px;
+    border-radius: 8px;
+}
+
+#contact_container > h1{
+    color: black;
+}
+
+#contact_container form{
+    width: 70%;
+    margin-top: 36px;
+}
+
+#contact_container label{
+    font-size: 0.9rem;
+    
+}
+
+#contact_container input{
+    border-radius: 4px;
+    border-color: black;
+    box-shadow: 0px;
+    width: 90%;
+    padding: 12px;
+    padding-left: 44px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-style: solid;
+    font-size: 0.8rem;
+}
+
+#contact_container textarea{
+    border-radius: 4px;
+    border-color: black;
+    box-shadow: 0px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-style: solid;
+    font-size: 0.8rem;
+    
+}
+
+::placeholder{
+    color: #858585;
+}
+
+
+/* Need to work on this solution
+background-position:left 20px top center;
+*/
+#fullName{
+    background: url("/icons/name_icon.png") no-repeat;
+    background-size: 24px;
+    background-position:left 10px top 10px;
+}
+
+#userEmail{
+    background: url("/icons/mail_icon.png") no-repeat;
+    background-size: 24px;
+    background-position: left 10px top 10px;
+    
+}
+
+#submitButton{
+    display: flex;
+    color: white;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#submitButton p:hover{
+    cursor: pointer;
+    background: var(--primaryColor);
+}
+
+#submitButton > p{
+    background: #242424;
+    max-width: 40%;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+
+
+
+/* Follow Me Container */
+
+#follow_me_container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 1;
+}
+
+#follow_me_container > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#follow_me_container img{
+        background: white;
+        padding: 8px;
+        border-radius: 8px;
+}
+
+#follow_me_container p{
+    font-size: 1.2rem;
+    margin-left: 24px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#follow_me_container :hover{
+    cursor: pointer;
+}
+
+#follow_me_container p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: white;
+    text-underline-offset: 8px;
+}
+
+#follow_me_container > h1{
+    color: white;
+}
+
+
+.tag_footer{
+    align-self: center;
+    text-align: center;
+    margin: 16px;
+}
+
+.tag_footer:hover{
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+
+
+
+.social_media_icon_footer{
+    height: 28px;
+    margin: 24px 0px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #contact_me_container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #follow_me_container{
+        margin-top: 24px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+ 
+    #follow_me_container{
+        
+    }
+}

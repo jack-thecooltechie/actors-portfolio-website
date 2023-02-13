@@ -1,0 +1,268 @@
+
+
+
+/* Hero */
+
+/*TODO Find a better way to center elements without taking it to side*/
+
+#hero_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+}
+
+
+#hero_image_container{
+    display: flex;
+    z-index: 1;
+    width: 600px;
+    height: 600px;
+    margin-left: 200px;
+    
+}
+
+
+#hero_image_container > img{
+    background: transparent; 
+    width: 500px;
+    height: 600px;
+}
+
+#hero_introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 56px;
+    
+}
+
+#hero_introduction > h1{
+    font-size: 3.5rem;
+    
+    letter-spacing: 2px;
+    color: var(--primaryColor);
+    width: 350px;
+    text-align: start;
+}
+
+#hero_introduction > h3{
+    font-weight: 600;
+    margin-top: 12px;
+    width: 350px;
+    text-align: start;
+    
+}
+
+#hero_introduction > p{
+    
+    margin-top: 12px;
+    width: 60%;
+    word-spacing: 2px;
+    width: 350px;
+    text-align: start;
+}
+
+
+#hero_image_background{
+    position: absolute;
+    background-color: #242424;
+    height: 600px;
+    width: 600px;
+    border-radius: 38% 62% 50% 50% / 42% 38% 62% 58% ;
+    bottom: 0px;
+    margin-bottom: -70px;
+    left: 90px;
+    z-index: -1;
+
+    animation: heroBackgroundAnimation 3000ms ease-in-out infinite forwards;
+}
+
+.hero_show{
+    animation: heroAnimation 500ms ease-in-out forwards;
+}
+
+#hero_introduction :nth-of-type(2){
+    animation-timing-function: 1000ms;
+}
+
+
+
+.media_show{
+    animation: mediaIconAnimation 1000ms ease-in-out forwards;
+}
+
+.profile_anim{
+    opacity: 1;
+}
+
+
+/* Social Media Icons*/
+.social_media_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.social_media_icon{
+    height: 28px;
+    margin: 24px 0px;
+}
+
+
+
+
+
+/* animations */
+
+/* Border background animation*/
+
+@keyframes heroBackgroundAnimation {
+    0%{
+        border-radius: 38% 62% 50% 50% / 42% 38% 62% 58% ;
+    }
+    50%{
+        border-radius: 62% 38% 59% 41% / 46% 56% 44% 54% ;
+    }
+    100%{
+        border-radius: 38% 62% 50% 50% / 42% 38% 62% 58% ;
+    }
+}
+
+@keyframes heroAnimation {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes mediaIconAnimation {
+    0%{
+        
+        opacity: 0;
+    }
+
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #hero_container{
+        flex-direction: column-reverse;
+        
+    }
+
+    #hero_introduction{
+        align-self: flex-end;
+        padding: 0px;
+
+        margin-right: 24px;
+    }
+
+    #hero_introduction > h1{
+        font-size: 3.1rem;
+        
+        width: 250px;
+        
+    }
+    
+    #hero_introduction > h3{
+        width: 250px;
+        
+    }
+
+    #hero_image_container{
+        display: flex;
+        z-index: 1;
+        width: 600px;
+        height: 600px;
+        margin: 0px;
+    }
+
+    #hero_image_container > img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    #hero_image_background{
+        height: 500px;
+        width: 500px;
+        margin-left: -36px;
+        margin-bottom: -200px;
+        
+    }
+
+    #hero_introduction > p{
+        display: none;
+    }
+
+    .social_media_icons{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #hero_introduction > h1{
+        font-size: 3.5rem;
+        width: 250px;
+        
+    }
+    
+    #hero_introduction > h3{
+        width: 250px;
+    }
+
+    #hero_introduction > p{
+        width: 250px;
+    }
+
+    #hero_image_container{
+        display: flex;
+        z-index: 1;
+        width: 600px;
+        height: 600px;
+        margin: 0px;
+    }
+
+    #hero_image_container > img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    #hero_image_background{
+        height: 550px;
+        width: 500px;
+        margin-top: 64px;
+        margin-left: -64px;
+        
+    }
+
+    
+
+    .social_media_icons{
+        display: none;
+    }
+}

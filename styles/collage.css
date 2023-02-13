@@ -1,0 +1,127 @@
+
+
+/* Collage Header*/
+.photo_heading{
+    
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-left: 64px;
+}
+
+#imagesCollage{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+    background: transparent;
+    align-items: center;
+    margin-top: 72px;
+}
+
+#imagesCollage div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.gridItem{
+    width:250px;
+    margin: 16px;
+    border-radius: 12px;
+    padding: 2px;
+    background: black;
+    cursor: pointer;
+}
+
+.gridShow{
+    background: blue;
+    
+}
+
+.gridItem:hover{
+    background: black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+#imagesCollage :nth-child(1) :nth-child(1){
+    height:420px;
+}
+
+#imagesCollage :nth-child(1) :nth-child(2){
+    height:350px;
+}
+
+#imagesCollage :nth-child(1) :nth-child(3){
+    height:450px;
+}
+
+#imagesCollage :nth-child(2) :nth-child(1){
+    height:350px;
+}
+
+#imagesCollage :nth-child(2) :nth-child(2){
+    height:450px;
+}
+
+#imagesCollage :nth-child(2) :nth-child(3){
+    height:375px;
+}
+
+#imagesCollage :nth-child(3) :nth-child(1){
+    height:425px;
+}
+
+#imagesCollage :nth-child(3) :nth-child(2){
+    height:325px;
+}
+
+#imagesCollage :nth-child(3) :nth-child(3){
+    height:450px;
+}
+
+#imagesCollage :nth-child(4) :nth-child(1){
+    height:350px;
+}
+
+#imagesCollage :nth-child(4) :nth-child(2){
+    height:425px;
+}
+
+#imagesCollage :nth-child(4) :nth-child(3){
+    height:350px;
+}
+
+
+
+
+/* For mobile phones*/
+
+@media screen and (max-width:800px){
+
+    #imagesCollage{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+
+    #imagesCollage{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridItem{
+        width:350px;
+        margin: 16px;
+        border-radius: 12px;
+        padding: 2px;
+        background: black;
+        cursor: pointer;
+    }
+
+}

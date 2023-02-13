@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+
+:root{
+    --primaryColor: #EA1F4B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+}
+
+/* Nav Bar*/
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px;
+}
+
+.navBar > div{
+    flex: 1 2;
+}
+
+.navBar li{
+    display: inline-block;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.navBar > div a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navBar > div a:hover{
+    color: var(--primaryColor);
+}
+
+
+.git_button{
+    background-color: var(--primaryColor);
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.git_button a{
+    color: white !important;
+}
+
+
+.git_button:hover{
+    background-color: #242424;
+    cursor: pointer;
+    
+}
+
+.name_tag > h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.tag_footer a{
+    text-decoration: none;
+    color: #242424;
+}
+
+.tag_footer a:hover{
+    color: var(--primaryColor);
+}
+
+/* Heading Tag*/
+
+.heading_container{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading_container > h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #242424;
+    letter-spacing: 2px;
+}
+
+.heading_container > img{
+    height: 56px;
+    width: 56px;
+    margin-left: 24px;
+    
+}
+
+.burger_icon{
+    
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.burger_icon :hover{
+    cursor: pointer;
+}
+
+.burger_icon > img{
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+}
+
+
+/* Mobile Navigation Container */
+
+.mobile_navigation_container{
+    position: absolute;
+    background-color: #242424;
+    width: 100%;
+    height: 90%;
+
+    top: 84px;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    visibility: hidden;
+    
+}
+
+.mobile_navigation_container  li{
+    list-style: none;
+    margin: 64px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile_navigation_container a{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mobile_navigation_container a:hover{
+    color: var(--primaryColor);
+}
+
+.mobile_navigation_container .git_button{
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.mobile_navigation_container .git_button:hover{
+    background-color: whitesmoke !important;
+    
+}
+
+.git_button a{
+    font-size: 1.5rem;
+}
+
+.git_button:hover{
+    color: black !important;
+}
+
+.navBarContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.cancel_icon{
+    align-self: flex-end;
+    height: 36px;
+    width: 36px;
+    margin-right: 24px;
+    background: green;
+}
+
+.nav_bar_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav_bar_top > img{
+    height: 36px;
+    width: 36px;
+    margin-right: 24px;
+}
+
+.nav_bar_top h1{
+    margin-left: 24px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .mobile_navigation_container{
+        visibility: hidden;
+    }
+
+    /* The burger icon is not center aligned*/
+    .navBar{
+        
+        justify-content: space-around;
+    }
+
+
+
+
+
+    .burger_icon{
+        height: 36px;
+        width: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+  
+    }
+
+    .burger_icon > img{
+        justify-self: flex-end;
+    
+    }
+
+
+    .navItem_large{
+        display: none;
+    }
+
+
+    .git_button a{
+        font-size: 1.5rem;
+    }
+    
+    .git_button a:hover{
+        color: black !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .mobile_navigation_container{
+        visibility: hidden;
+    }
+
+    /* The burger icon is not center aligned*/
+    .navBar{
+        
+        justify-content: space-around;
+    }
+
+    .navItem_large{
+        display: none;
+    }
+
+
+
+    .burger_icon{
+        display: flex;
+        
+        height: 36px;
+        width: 36px;
+    }
+
+
+    .navItem_large{
+        display: none;
+    }
+
+
+    .git_button a{
+        font-size: 1.5rem;
+    }
+
+}

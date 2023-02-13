@@ -1,0 +1,198 @@
+@import url('styles.css');
+@import url('./footer_styles.css');
+
+
+#my_works_heading{
+    align-self: flex-start;
+    margin-top: 100px;
+}
+
+
+#works_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    row-gap: 12px;
+    column-gap: 12px;
+    padding: 24px;
+}
+
+.works_element{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--primaryColor);
+
+    border-radius: 8px;
+    
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+#works_container > :nth-child(1), #works_container > :nth-child(4), #works_container > :nth-child(5), #works_container > :nth-child(8), #works_container > :nth-child(9), #works_container > :nth-child(12){
+    background: black;
+    flex-direction: row-reverse;
+}
+
+#works_container > :nth-child(1) img, #works_container > :nth-child(4) img, #works_container > :nth-child(5) img, #works_container > :nth-child(8) img, #works_container > :nth-child(9) img, #works_container > :nth-child(12) img{
+    border-radius: 0px 8px 8px 0px;
+}
+
+
+
+.works_element > img{
+    height: 300px;
+    width: 400px;
+
+    border-radius: 8px 0px 0px 8px;
+}
+
+.works_element > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+.works_element > div p{
+
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+
+    color: whitesmoke;
+    
+}
+
+.works_element > div h3{
+    font-size: 1rem;
+    font-size: 600;
+
+    color: rgb(227, 227, 227);
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    #works_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+        row-gap: 16px;
+        column-gap: 12px;
+        padding: 16px;
+   
+    }
+
+    .works_element{
+        background: var(--primaryColor);
+        
+    }
+
+    .works_element > img{
+        height: 300px;
+        width: 400px;
+    }
+
+
+
+    #works_container > :nth-child(2n+1){
+        background: black;
+        flex-direction: row-reverse;
+    }
+
+    #works_container > :nth-child(2n+1) img {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    #works_container > :nth-child(2n) img {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    #works_container > :nth-child(2n){
+        background: var(--primaryColor);
+    }
+    
+
+    .works_element > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        margin: 0px 8px;
+    
+    }
+
+    .works_element > div p{
+
+        font-size: 0.75rem;
+    
+    }
+    
+    .works_element > div h3{
+        font-size: 1rem;
+        font-size: 600;
+    }
+
+}
+
+
+ @media screen and (min-width: 700px) and (max-width: 1024px){
+
+    #works_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+        row-gap: 44px;
+        column-gap: 12px;
+        padding: 44px;
+    }
+
+    .works_element{
+        background: var(--primaryColor);
+        
+    }
+
+    .works_element img{
+        height: 400px;
+        width: 500px;
+    }
+
+    #works_container > :nth-child(2n+1){
+        background: black;
+        flex-direction: row-reverse;
+    }
+
+    #works_container > :nth-child(2n+1) img {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    #works_container > :nth-child(2n) img {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    #works_container > :nth-child(2n){
+        background: var(--primaryColor);
+    }
+
+    .works_element > div{
+        margin: 0px 16px;
+    
+    }
+
+    .works_element > div p{
+
+        font-size: 1rem;
+
+    }
+    
+    .works_element > div h3{
+        font-size: 1.5rem;
+    }
+} 
+
