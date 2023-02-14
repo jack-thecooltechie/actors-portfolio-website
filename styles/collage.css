@@ -2,12 +2,11 @@
 
 /* Collage Header*/
 .photo_heading{
-    
     align-items: center;
     text-align: center;
     justify-content: flex-start;
     overflow: hidden;
-    margin-left: 64px;
+    padding: 8px;
 }
 
 #imagesCollage{
@@ -101,6 +100,65 @@
 
 
 /* For mobile phones*/
+
+
+@media screen and (max-width: 450px){
+
+    .gridItem{
+        width:175px;
+        margin: 8px;
+    }
+    
+
+
+    #imagesCollage :nth-child(1) :nth-child(1){
+        height:320px;
+    }
+    
+    #imagesCollage :nth-child(1) :nth-child(2){
+        height:250px;
+    }
+    
+    #imagesCollage :nth-child(1) :nth-child(3){
+        height:350px;
+    }
+    
+    #imagesCollage :nth-child(2) :nth-child(1){
+        height:250px;
+    }
+    
+    #imagesCollage :nth-child(2) :nth-child(2){
+        height:350px;
+    }
+    
+    #imagesCollage :nth-child(2) :nth-child(3){
+        height:275px;
+    }
+    
+    #imagesCollage :nth-child(3) :nth-child(1){
+        height:325px;
+    }
+    
+    #imagesCollage :nth-child(3) :nth-child(2){
+        height:225px;
+    }
+    
+    #imagesCollage :nth-child(3) :nth-child(3){
+        height:350px;
+    }
+    
+    #imagesCollage :nth-child(4) :nth-child(1){
+        height:250px;
+    }
+    
+    #imagesCollage :nth-child(4) :nth-child(2){
+        height:325px;
+    }
+    
+    #imagesCollage :nth-child(4) :nth-child(3){
+        height:250px;
+    }
+}
 
 @media screen and (max-width:800px){
 

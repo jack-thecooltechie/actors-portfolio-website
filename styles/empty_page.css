@@ -37,8 +37,31 @@
     align-self: center;
 }
 
+@media screen and (max-width:450px){
 
-@media screen and (max-width: 900px) {
+
+    #page-content{
+        padding: 0px 12px 0px 24px;
+    }
+
+    #page-content h1{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #page-content h3{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+    
+    #page-content img{
+        height: 70%;
+        align-self: center;
+    }
+}
+
+
+@media screen and (min-width:451px) and (max-width: 900px) {
     #page-content h1{
         width: 100%;
         margin: 0px;

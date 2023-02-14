@@ -142,6 +142,26 @@
 }
 
 
+@media screen and (max-width: 600px) {
+    
+    .works_element{
+        display: flex;
+        flex-direction: column !important;
+
+    }
+
+    .works_element > img{
+        height: 300px;
+        width: 275px;
+        margin: 12px;
+        border-radius: 8px !important;
+    }
+
+    .works_element > div{
+        padding: 4px 8px;
+    }
+}
+
  @media screen and (min-width: 700px) and (max-width: 1024px){
 
     #works_container{

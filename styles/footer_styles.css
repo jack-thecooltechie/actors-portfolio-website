@@ -178,6 +178,16 @@ background-position:left 20px top center;
 
 
 
+@media screen and (max-width: 450px){
+
+ 
+    #submitButton > p{
+    
+        max-width: 70%;
+ 
+    }
+    
+}
 
 @media screen and (max-width: 600px) {
 

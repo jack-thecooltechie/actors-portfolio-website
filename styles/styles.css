@@ -211,6 +211,24 @@
 }
 
 
+@media screen and (max-width: 450px){
+
+    /* Heading Tag*/
+
+.heading_container > h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #242424;
+    letter-spacing: 2px;
+}
+
+.heading_container > img{
+    height: 44px;
+    width: 44px;
+    margin-left: 24px;
+    
+}
+}
 
 
 @media screen and (max-width: 600px) {

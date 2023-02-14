@@ -93,6 +93,12 @@
 }
 
 
+@media screen and (max-width: 450px){
+    .about_me_content > p{
+        
+    }
+}
+
 
 @media screen and (max-width: 600px){
 
@@ -122,7 +128,6 @@
     }
 
     .about_me_content > p{
-        width: 70%;
         text-align: start;
     }
 }
@@ -155,7 +160,7 @@
     }
 
     .about_me_content > p{
-        width: 70%;
         text-align: start;
+        width: 90%;
     }
 }
