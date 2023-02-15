@@ -19,7 +19,7 @@ menuButton.addEventListener("click", function (){
 
     else{
         mobileNavigation.style.visibility = "hidden";
-        menuButton.children[0].src="/../icons/burger-menu.png";
+        menuButton.children[0].src="/../icons/burger_menu.png";
         console.log(menuButton.children[0]);
     }
       
