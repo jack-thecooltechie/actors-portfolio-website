@@ -334,16 +334,14 @@
 
 
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 800px) and (max-width: 1300px){
 
     #hero_image_background{
     
         height: 700px;
         width: 600px;
-        bottom: 170px;
+        bottom: 0px;
         left: 100px;    
-        
     }
-
     
 }
