@@ -13,7 +13,7 @@ menuButton.addEventListener("click", function (){
 
     if(mobileNavigation.style.visibility === "hidden"){
         mobileNavigation.style.visibility = "visible";
-        menuButton.children[0].src="icons/cancel-icon.png";
+        menuButton.children[0].src="./Images/cancel-icon.png";
         console.log(menuButton.children[0]);
     }
 
