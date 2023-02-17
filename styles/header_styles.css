@@ -176,12 +176,13 @@
 #hero_image_container{
     display: flex;
     z-index: 1;
-    width: 450px;
+    width: 400px;
     height: 600px;
     margin-left: 0px;
     padding: 0px;
     align-items: center;
     justify-content: center;
+    
     
     
 }
@@ -191,6 +192,8 @@
 
     width: 80%;
     height: 100%;
+
+    
 }
 
 
@@ -260,12 +263,16 @@
         width: 600px;
         height: 600px;
         margin: 0px;
+
+     
     }
 
     #hero_image_container > img{
         width: 100%;
         height: 100%;
         object-fit: contain;
+
+        
     }
 
     #hero_image_background{
@@ -342,6 +349,20 @@
         width: 600px;
         bottom: 0px;
         left: 100px;    
+    }
+    
+}
+
+
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+
+    #hero_image_background{
+    
+        height: 500px;
+        width: 500px;
+        bottom: -300px;
+        left: -50px;    
     }
     
 }

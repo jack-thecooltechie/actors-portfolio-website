@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 16px;
 }
 
@@ -95,7 +95,7 @@
 .profile_container > div{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
@@ -453,4 +453,22 @@
         padding: 16px;
         font-size: 1.1rem;    
     }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    #about_me_video_link_container{
+    
+        height: 100%;
+        width: 100%;
+    }
+    
+    #about_me_video_link_container > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    
 }
