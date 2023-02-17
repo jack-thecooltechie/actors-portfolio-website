@@ -73,13 +73,13 @@
 background-position:left 20px top center;
 */
 #fullName{
-    background: url("../icons/name-icon.png") no-repeat;
+    background: url("icons/name-icon.png") no-repeat;
     background-size: 24px;
     background-position:left 10px top 10px;
 }
 
 #userEmail{
-    background: url("../icons/mail-icon.png") no-repeat;
+    background: url("icons/mail-icon.png") no-repeat;
     background-size: 24px;
     background-position: left 10px top 10px;
     
